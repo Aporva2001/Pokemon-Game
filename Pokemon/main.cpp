@@ -1,3 +1,4 @@
+#include<windows.h>
 #include "include/Main/Game.hpp"
 #include "include/Character/Player/Player.hpp"
 #include "include/Character/ProfessorOak.hpp"
@@ -9,6 +10,7 @@ using namespace N_Player;
 
 int main() {
 
+    SetConsoleOutputCP(CP_UTF8);
     // Continue with the main flow of the game
     ProfessorOak* professor = new ProfessorOak("Professor Oak");
     N_Player::Player* player = new N_Player::Player();
